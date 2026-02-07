@@ -23,6 +23,11 @@
       "version": "1.17.x",
       "image": "kasm-workspaces/dragonos-sdr:latest",
       "uncompressed_size_mb": 5500
+    },
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-sdr:latest",
+      "uncompressed_size_mb": 5500
     }
   ],
   "notes": "Based on kasmweb/core-ubuntu-noble:1.17.0. Includes SDR drivers (RTL-SDR, HackRF, Airspy, LimeSDR, PlutoSDR, UHD, SoapySDR), GNU Radio 3.10, GUI apps, decoders (rtl_433, dump1090, dumpvdl2, dumphfdl, acarsdec, multimon-ng), cellular (srsRAN 4G/5G, LTESniffer, FALCON), and trunking tools.\n\nFor USB SDR device access, the container runs privileged."
