@@ -1,0 +1,29 @@
+{
+  "friendly_name": "DragonOS - Aviation",
+  "description": "Aviation RF decoders: ADS-B (dump1090), ACARS (acarsdec), VDL2 (dumpvdl2), HFDL (dumphfdl), and airband scanner (rtl_airband).",
+  "docker_registry": "https://harbor.lab.techring.live",
+  "image_src": "dragonos-sdr.png",
+  "categories": ["SDR", "Aviation"],
+  "architecture": ["amd64"],
+  "cores": 2,
+  "memory": 2048,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "run_config": {
+    "hostname": "dragonos",
+    "environment": {
+      "VNC_PW": "dragonos"
+    },
+    "privileged": true,
+    "shm_size": "512m"
+  },
+  "exec_config": {},
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-aviation:latest",
+      "uncompressed_size_mb": 3000
+    }
+  ],
+  "notes": "Aviation-focused decoders for ADS-B, ACARS, VDL2, HFDL, and VHF airband. Includes GNU Radio 3.10 + OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."
+}

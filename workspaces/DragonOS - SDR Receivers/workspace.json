@@ -1,0 +1,29 @@
+{
+  "friendly_name": "DragonOS - SDR Receivers",
+  "description": "GUI SDR receiver applications: GQRX, SDR++, SDRAngel, CubicSDR, SigDigger, plus GNU Radio Companion for flowgraph development.",
+  "docker_registry": "https://harbor.lab.techring.live",
+  "image_src": "dragonos-sdr.png",
+  "categories": ["SDR", "Desktop"],
+  "architecture": ["amd64"],
+  "cores": 2,
+  "memory": 4096,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "run_config": {
+    "hostname": "dragonos",
+    "environment": {
+      "VNC_PW": "dragonos"
+    },
+    "privileged": true,
+    "shm_size": "512m"
+  },
+  "exec_config": {},
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-receivers:latest",
+      "uncompressed_size_mb": 3500
+    }
+  ],
+  "notes": "GUI SDR receivers with desktop launchers. Includes GNU Radio 3.10 + 30 OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."
+}

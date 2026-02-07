@@ -1,0 +1,29 @@
+{
+  "friendly_name": "DragonOS - Protocol Analysis",
+  "description": "RF protocol analysis and reverse engineering: rtl_433 (ISM band), multimon-ng (multi-protocol), inspectrum (spectrogram), URH (Universal Radio Hacker), and ubertooth (Bluetooth).",
+  "docker_registry": "https://harbor.lab.techring.live",
+  "image_src": "dragonos-sdr.png",
+  "categories": ["SDR", "Analysis"],
+  "architecture": ["amd64"],
+  "cores": 2,
+  "memory": 2048,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "run_config": {
+    "hostname": "dragonos",
+    "environment": {
+      "VNC_PW": "dragonos"
+    },
+    "privileged": true,
+    "shm_size": "512m"
+  },
+  "exec_config": {},
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-analysis:latest",
+      "uncompressed_size_mb": 2800
+    }
+  ],
+  "notes": "Lightweight protocol analysis workspace for ISM band, Bluetooth, and RF reverse engineering. Includes GNU Radio 3.10 + OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."
+}

@@ -1,0 +1,29 @@
+{
+  "friendly_name": "DragonOS - Digital Modes",
+  "description": "Ham radio digital modes and broadcast decoders: fldigi, WSJT-X, Direwolf, JS8Call, M17, HD Radio (nrsc5), and DAB/DAB+ (qt-dab).",
+  "docker_registry": "https://harbor.lab.techring.live",
+  "image_src": "dragonos-sdr.png",
+  "categories": ["SDR", "Ham Radio"],
+  "architecture": ["amd64"],
+  "cores": 2,
+  "memory": 2048,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "run_config": {
+    "hostname": "dragonos",
+    "environment": {
+      "VNC_PW": "dragonos"
+    },
+    "privileged": true,
+    "shm_size": "512m"
+  },
+  "exec_config": {},
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-digital:latest",
+      "uncompressed_size_mb": 3000
+    }
+  ],
+  "notes": "Digital mode applications for amateur radio and broadcast reception. Includes GNU Radio 3.10 + OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."
+}

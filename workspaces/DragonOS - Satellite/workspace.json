@@ -1,0 +1,29 @@
+{
+  "friendly_name": "DragonOS - Satellite",
+  "description": "Satellite reception and tracking: SatDump (weather/comms satellites), Gpredict (tracking), noaa-apt (NOAA APT decoder), and iridium-toolkit.",
+  "docker_registry": "https://harbor.lab.techring.live",
+  "image_src": "dragonos-sdr.png",
+  "categories": ["SDR", "Satellite"],
+  "architecture": ["amd64"],
+  "cores": 2,
+  "memory": 2048,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "run_config": {
+    "hostname": "dragonos",
+    "environment": {
+      "VNC_PW": "dragonos"
+    },
+    "privileged": true,
+    "shm_size": "512m"
+  },
+  "exec_config": {},
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-satellite:latest",
+      "uncompressed_size_mb": 3200
+    }
+  ],
+  "notes": "Satellite reception, decoding, and tracking tools. gr-satellites OOT module included in base for GNU Radio satellite flowgraphs.\n\nFor USB SDR device access, the container runs privileged."
+}

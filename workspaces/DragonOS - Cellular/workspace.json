@@ -1,0 +1,29 @@
+{
+  "friendly_name": "DragonOS - Cellular",
+  "description": "Cellular network analysis: srsRAN 4G/5G, LTESniffer, FALCON, LTE Cell Scanner, Osmocom GSM stack, and kalibrate-hackrf.",
+  "docker_registry": "https://harbor.lab.techring.live",
+  "image_src": "dragonos-sdr.png",
+  "categories": ["SDR", "Cellular"],
+  "architecture": ["amd64"],
+  "cores": 2,
+  "memory": 4096,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "run_config": {
+    "hostname": "dragonos",
+    "environment": {
+      "VNC_PW": "dragonos"
+    },
+    "privileged": true,
+    "shm_size": "512m"
+  },
+  "exec_config": {},
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "kasm-workspaces/dragonos-cellular:latest",
+      "uncompressed_size_mb": 3500
+    }
+  ],
+  "notes": "Cellular analysis tools for GSM/LTE/5G. srsRAN provides eNodeB and UE simulation. LTESniffer and FALCON for passive LTE analysis. Osmocom for GSM.\n\nFor USB SDR device access, the container runs privileged."
+}

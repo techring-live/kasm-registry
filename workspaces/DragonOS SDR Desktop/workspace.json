@@ -1,9 +1,9 @@
 {
-  "friendly_name": "DragonOS SDR Desktop",
-  "description": "Full SDR development and analysis environment with GNU Radio 3.10, 30+ OOT modules, SDR drivers, GUI apps (GQRX, SDR++, SDRAngel, CubicSDR, SatDump, SigDigger), decoders, and cellular tools.",
+  "friendly_name": "DragonOS - Full Desktop",
+  "description": "Complete SDR development and analysis environment with GNU Radio 3.10, 30+ OOT modules, SDR drivers, GUI apps (GQRX, SDR++, SDRAngel, CubicSDR, SatDump, SigDigger), decoders, cellular tools, digital modes, and trunking.",
   "docker_registry": "https://harbor.lab.techring.live",
   "image_src": "dragonos-sdr.png",
-  "categories": ["Desktop", "Development", "Science"],
+  "categories": ["SDR", "Desktop", "Development"],
   "architecture": ["amd64"],
   "cores": 2,
   "memory": 4096,
@@ -20,15 +20,10 @@
   "exec_config": {},
   "compatibility": [
     {
-      "version": "1.17.x",
-      "image": "kasm-workspaces/dragonos-sdr:latest",
-      "uncompressed_size_mb": 5500
-    },
-    {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-sdr:latest",
       "uncompressed_size_mb": 5500
     }
   ],
-  "notes": "Based on kasmweb/core-ubuntu-noble:1.17.0. Includes SDR drivers (RTL-SDR, HackRF, Airspy, LimeSDR, PlutoSDR, UHD, SoapySDR), GNU Radio 3.10, GUI apps, decoders (rtl_433, dump1090, dumpvdl2, dumphfdl, acarsdec, multimon-ng), cellular (srsRAN 4G/5G, LTESniffer, FALCON), and trunking tools.\n\nFor USB SDR device access, the container runs privileged."
+  "notes": "Based on kasmweb/core-ubuntu-noble:1.18.0. The kitchen-sink image with every SDR tool. For focused workspaces, see DragonOS - SDR Receivers, Aviation, Cellular, etc.\n\nFor USB SDR device access, the container runs privileged."
 }
