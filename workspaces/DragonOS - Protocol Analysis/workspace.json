@@ -21,7 +21,7 @@
   "compatibility": [
     {
       "version": "1.18.x",
-      "image": "kasm-workspaces/dragonos-analysis:latest",
+      "image": "harbor.lab.techring.live/kasm-workspaces/dragonos-analysis:latest",
       "uncompressed_size_mb": 2210
     }
   ],

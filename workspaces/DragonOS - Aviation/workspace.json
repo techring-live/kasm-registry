@@ -21,7 +21,7 @@
   "compatibility": [
     {
       "version": "1.18.x",
-      "image": "kasm-workspaces/dragonos-aviation:latest",
+      "image": "harbor.lab.techring.live/kasm-workspaces/dragonos-aviation:latest",
       "uncompressed_size_mb": 2161
     }
   ],
