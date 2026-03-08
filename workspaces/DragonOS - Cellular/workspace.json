@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-cellular:latest",
-      "uncompressed_size_mb": 3500
+      "uncompressed_size_mb": 2793
     }
   ],
   "notes": "Cellular analysis tools for GSM/LTE/5G. srsRAN provides eNodeB and UE simulation. LTESniffer and FALCON for passive LTE analysis. Osmocom for GSM.\n\nFor USB SDR device access, the container runs privileged."

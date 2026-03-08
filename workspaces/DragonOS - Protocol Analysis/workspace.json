@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-analysis:latest",
-      "uncompressed_size_mb": 2800
+      "uncompressed_size_mb": 2210
     }
   ],
   "notes": "Lightweight protocol analysis workspace for ISM band, Bluetooth, and RF reverse engineering. Includes GNU Radio 3.10 + OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."

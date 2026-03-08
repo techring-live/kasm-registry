@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-satellite:latest",
-      "uncompressed_size_mb": 3200
+      "uncompressed_size_mb": 2315
     }
   ],
   "notes": "Satellite reception, decoding, and tracking tools. gr-satellites OOT module included in base for GNU Radio satellite flowgraphs.\n\nFor USB SDR device access, the container runs privileged."

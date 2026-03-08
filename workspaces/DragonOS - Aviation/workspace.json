@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-aviation:latest",
-      "uncompressed_size_mb": 3000
+      "uncompressed_size_mb": 2161
     }
   ],
   "notes": "Aviation-focused decoders for ADS-B, ACARS, VDL2, HFDL, and VHF airband. Includes GNU Radio 3.10 + OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."

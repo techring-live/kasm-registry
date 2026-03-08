@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-digital:latest",
-      "uncompressed_size_mb": 3000
+      "uncompressed_size_mb": 2267
     }
   ],
   "notes": "Digital mode applications for amateur radio and broadcast reception. Includes GNU Radio 3.10 + OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."

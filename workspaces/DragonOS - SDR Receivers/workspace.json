@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-receivers:latest",
-      "uncompressed_size_mb": 3500
+      "uncompressed_size_mb": 2422
     }
   ],
   "notes": "GUI SDR receivers with desktop launchers. Includes GNU Radio 3.10 + 30 OOT modules in the base.\n\nFor USB SDR device access, the container runs privileged."

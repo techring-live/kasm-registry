@@ -22,7 +22,7 @@
     {
       "version": "1.18.x",
       "image": "kasm-workspaces/dragonos-sdr:latest",
-      "uncompressed_size_mb": 5500
+      "uncompressed_size_mb": 3400
     }
   ],
   "notes": "Based on kasmweb/core-ubuntu-noble:1.18.0. The kitchen-sink image with every SDR tool. For focused workspaces, see DragonOS - SDR Receivers, Aviation, Cellular, etc.\n\nFor USB SDR device access, the container runs privileged."
